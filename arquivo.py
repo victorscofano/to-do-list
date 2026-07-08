@@ -21,7 +21,7 @@ def salvar_tarefas(tarefas:list, caminho_arquivo:str):
             # json.dump pega a lista 'tarefas' e grava dentro de 'arquivo'
             # indent=4 serve para deixar o arquivo .json organizado e visual
             json.dump(tarefas, arquivo, indent=4, ensure_ascii=False)
-    # bloco de excessões com os erros
+    # bloco de exceções com os erros
     except PermissionError: # erro de permissão de diretório
         print("Programa sem permissão do sistema para acessar a pasta/arquivo") 
     except OSError as erro: # erro de sistema (qualquer)
@@ -44,7 +44,7 @@ def carregar_tarefas(caminho_arquivo: str):
             tarefas_salvas = json.load(arquivo)
         
         return tarefas_salvas
-    # bloco de excessões
+    # bloco de exceções
     except FileNotFoundError: # erro de arquivo inexistente
         print("Aviso: Arquivo não existe.")
         return []

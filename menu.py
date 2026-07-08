@@ -16,7 +16,7 @@ def exibir_menu():
         "[bright_blue]3 - Concluir tarefa[/bright_blue]\n"
         "[yellow]4 - Editar tarefa[/yellow]\n"
         "[red]5 - Remover tarefa[/red]\n"
-        "[bright_red]6 - Sair[/bright_red]"
+        "6 - Sair"
     )
     print(conteudo_menu)
 
